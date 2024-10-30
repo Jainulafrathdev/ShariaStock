@@ -1,0 +1,2 @@
+# ShariaStock
+Project name - Shariastock
