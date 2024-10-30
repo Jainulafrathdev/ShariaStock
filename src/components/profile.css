@@ -1,0 +1,283 @@
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height for footer positioning */
+  background-color: #f5f5f5; /* Set body background color */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002d62;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center; /* Align icon and logo */
+}
+
+.header-icons .logo {
+  margin-left: 10px; /* Space between the listing icon and logo */
+}
+
+.user-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-icon i {
+  font-size: 1.5rem;
+}
+
+.profile-dropdown {
+  position: absolute; /* Position it absolutely within the body */
+  top: 50px; /* Adjust this value based on your navbar height */
+  right: 20px; /* Adjust to fit your layout */
+  background-color: #f5f5f5; /* Same color as sidebar sections */
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 10;
+  width: 200px; /* Adjust width as needed */
+}
+
+.premium-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+.sidebar {
+  
+  position: fixed;
+  top: 70px;
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebar-links li i {
+  margin-right: 10px;
+}
+
+.market-overview {
+  margin-top: 20px;
+}
+
+.market-overview h4 {
+  margin-bottom: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* Space between left, center, and right sections */
+  align-items: flex-start; /* Align items at the start */
+  background-color: #002d62;
+  color: white;
+  padding: 10px; /* Reduced padding */
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column; /* Stack newsletter and copyright */
+  align-items: center; /* Center the newsletter */
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column; /* Stack company info */
+  align-items: center; /* Center the company info */
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column; /* Stack social links */
+  align-items: flex-start; /* Align social links to the left */
+  margin-right: 50px;
+}
+
+.newsletter {
+  margin-bottom: 10px; /* Space between newsletter and copyright */
+}
+
+.company-info ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.company-info ul li,
+.footer-right ul li {
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.footer-right ul li {
+  display: flex;
+  align-items: center; /* Align icons with text */
+}
+
+.footer-right ul li i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.footer-center ul li {
+  cursor: pointer; /* Change the cursor to pointer */
+  list-style: none; /* Remove bullet points if you want */
+}
+
+.footer-center ul li:hover {
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+
+.footer-right a {
+  color: inherit; /* Inherit color from the parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* Optional: underline on hover for better UX */
+}
+
+
+/* profile.css */
+.newsletter {
+  margin: 20px 0;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+.stock-container {
+  display: flex;
+  flex-direction: column;
+
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+      background-color: #f9f9f9;
+}
+
+.stock-search-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #003366;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 500px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 500px;
+  font-size: 1rem;
+}
+
+/* Search Button */
+.search-button {
+  padding: 10px 20px;
+  background-color: #00A86B;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Button Hover Effect */
+.search-button:hover {
+  background-color: #007a50;
+}
+
+/* Suggestions List */
+.suggestions {
+  list-style: none;
+  padding: 0;
+  
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  position: relative;
+  z-index: 1000;
+  width: 400px;
+}
+
+/* Suggestion Item */
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}

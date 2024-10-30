@@ -1,0 +1,66 @@
+/* legal.css */
+
+.legal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Padding for responsiveness */
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* Soft background gradient */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  position: relative; /* Position for absolute overlay */
+  overflow: hidden; /* Prevent overflow */
+  background-image: url('../images/legalinfo.jpg');
+  background-size: 200vh; 
+}
+
+.legal-background {
+  position: absolute; /* Position it behind the content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Add your background image here */
+  /* Cover the entire section */
+  background-position: center; /* Center the image */
+  filter: brightness(0.5); /* Darken the background image */
+  z-index: -1; /* Place it behind other elements */
+}
+
+.legal-info {
+  background-color: rgba(255, 255, 255, 0.9); /* White background for the legal section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 40px; /* Internal padding */
+  max-width: 800px; /* Maximum width for the content */
+  width: 100%; /* Responsive width */
+  position: relative; /* To stack correctly with the background */
+}
+
+.legal-title {
+  font-size: 2.5em; /* Large title size */
+  color: #333; /* Dark text for title */
+  margin-bottom: 20px; /* Space below title */
+  text-align: center; /* Center the title */
+}
+
+.legal-description {
+  font-size: 1.2em; /* Normal font size for description */
+  color: #555; /* Medium dark text */
+  margin-bottom: 20px; /* Space below description */
+  text-align: justify; /* Justify text for better readability */
+}
+
+.legal-subtitle {
+  font-size: 1.8em; /* Subtitle size */
+  color: #0056b3; /* Blue color for subtitles */
+  margin-top: 30px; /* Space above subtitles */
+  margin-bottom: 10px; /* Space below subtitles */
+}
+
+.legal-text {
+  font-size: 1.1em; /* Normal font size for paragraphs */
+  color: #444; /* Slightly darker text */
+  margin-bottom: 20px; /* Space below paragraphs */
+  text-align: justify; /* Justify text for better readability */
+}

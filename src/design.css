@@ -1,0 +1,26 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  width: 100%;
+  background-color: #003366;
+  gap: 65%;
+  align-items: center;
+}
+.header-title{
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-size:x-large;
+  margin-left:7%;
+}
+.header-button{
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+.login,.signup{
+  padding: 5px ;
+  font-size: small;
+  background-color: #00A86B;
+  color: white;
+}

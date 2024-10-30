@@ -1,0 +1,160 @@
+h2{
+  font-size: xx-large;
+  margin: 10px;
+}
+
+.display-info{
+  display: flex;
+  flex-direction: column;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkgrey;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.image-editbtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  margin: 10px;
+}
+
+.image-editbtn img{
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 500px;
+  width: 150px;
+  height: 150px;
+}
+
+.image-editbtn button{
+  background-color: #00A86B;
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+}
+
+.address-section{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+
+}
+
+.address-title{
+  margin-right: 10px;
+}
+
+.address-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.image-component{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.image-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.image-section img{
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 500px;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.image-section input{
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.details h3{
+  margin: 0;
+}
+.details input{
+  width: 700px;
+  text-align: center;
+}
+
+.Address-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.Address-section h3{
+  margin: 0;
+}
+.Address-section input{
+  width: 700px;
+  text-align: center;
+}
+
+.Region-section{
+  display: flex;
+  flex-direction: row;
+  
+}
+.Region-section input{
+  width: 300px;
+  text-align: center;
+}
+
+
+.city{
+  margin-right: 90px;
+}
+
+.handle-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.handle-section input{
+  width: 300px;
+  text-align: center;
+  margin: 0;
+  
+}
+
+.handle-section button{
+  margin-left: 10px;
+  margin-right: 10px;
+}

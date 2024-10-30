@@ -1,0 +1,192 @@
+/* contactus.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  background-color: #f7f7f7;
+}
+
+.contact-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  font-family: 'Langar';
+}
+
+.text-container {
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+.left-section h1 {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  margin: 0; /* Remove default margins */
+  line-height: 1.2; /* Adjust line height for spacing between lines */
+  font-weight: 600; /* Make the text bold for better visibility */
+  color: white; /* Ensure text color contrasts well with the background */
+}
+
+
+.circle-design {
+  position: absolute;
+  width: 220px; /* Adjust size as needed */
+  height: 220px;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.4); /* Dotted border for the middle circle */
+  top: 50%; /* Center the circles vertically */
+  left: 50%; /* Center the circles horizontally */
+  transform: translate(-50%, -50%); /* Center the circle */
+  z-index: 1; /* Ensure it’s on top */
+}
+
+/* Add circles for the Audi symbol */
+.circle-design::before,
+.circle-design::after {
+  content: '';
+  position: absolute;
+  width: 220px; /* Same width and height as the main circle */
+  height: 220px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4); /* Solid border for the side circles */
+  top: 0; /* Align with the top of the main circle */
+}
+
+/* Position the additional circles without any space */
+.circle-design::before {
+  left: -200px; /* Align left circle with the middle circle */
+}
+
+.circle-design::after {
+  left: 200px; /* Align right circle with the middle circle */
+}
+
+
+/* .right-section {
+  flex: 1;
+  padding: 60px 40px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.right-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name-fields .contact-details  {
+  display: flex;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 91%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.contact-email {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+
+.right-section {
+  flex: 1;
+  padding: 60px 40px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between items */
+  position: relative;
+}
+
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  right: 40px; /* Align to the right */
+}
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+  }
+  .left-section, .right-section {
+    padding: 20px;
+  }
+}
+
+
+.email-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.contact-email {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
