@@ -11,15 +11,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  height: 70px;
   background-color: #003366;
   padding: 0 5%;
 }
 
-.header-title {
-  color: white;
-  font-size: 1.5rem;
-}
+
 
 .header-button {
   display: flex;
@@ -298,4 +295,11 @@ body {
 
 .auth-components button{
   width: 200px;
+}
+
+
+.header-logo {
+  height: 250px; /* Adjust the height as needed */
+  
+  
 }

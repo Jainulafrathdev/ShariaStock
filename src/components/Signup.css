@@ -1,0 +1,27 @@
+.header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px; /* Add padding around the header */
+  background-color: #003366; /* Optional: Set a background color */
+}
+
+.header-logo {
+  height: 50px; /* Adjust height of the logo */
+  margin-right: 20px; /* Space between logo and text if you add any */
+}
+
+/* Additional styles for your form container */
+.form-container {
+  max-width: 400px; /* Limit width of the form */
+  margin: 20px auto; /* Center form horizontally */
+  padding: 20px; /* Add padding inside the form */
+  border: 1px solid #ddd; /* Optional: Add border for better visibility */
+  border-radius: 5px; /* Optional: Round corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.alert {
+  margin-bottom: 15px; /* Space between alert and form */
+}
+
+/* Other input and button styles can go here */

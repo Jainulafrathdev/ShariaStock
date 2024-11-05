@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { signup } from '../api/auth';
 import '../App.css';
+import './Signup.css';
+import logo from '../images/ShariaStock-logo.png'; // Import your logo
 
 const Signup = () => {
     const [formData, setFormData] = useState({
@@ -37,11 +39,10 @@ const Signup = () => {
         }
     };
 
-
     return (
         <div>
-            <div className='header-section'>
-                <h1>ShariaStock</h1>
+            <div className='header'>
+                <img src={logo} alt="ShariaStock Logo" className='header-logo' />
             </div>
             <div className='form-container'>
                 <h1>Sign Up</h1>

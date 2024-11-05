@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center the logo horizontally */
+  height: 70px; /* Adjust the height as needed */
+  background-color: #003366; /* Match your header background */
+  padding: 0 20px; /* Add some padding */
+}
+
+.header-logo {
+  height: 50px; /* Set the logo height */
+}

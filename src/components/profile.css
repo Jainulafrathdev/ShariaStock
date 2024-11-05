@@ -7,6 +7,7 @@
 }
 
 .navbar {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,12 +18,14 @@
 
 .header-icons {
   display: flex;
-  align-items: center; /* Align icon and logo */
+  align-items: center;
+  justify-content: flex-start; /* Avoid stretching */
+ 
 }
 
-.header-icons .logo {
-  margin-left: 10px; /* Space between the listing icon and logo */
-}
+
+
+
 
 .user-icon {
   position: relative;
@@ -280,4 +283,17 @@
 
 .suggestion-item:hover {
   background-color: #f0f0f0;
+}
+
+.logo-css {
+  height: 80px; /* match navbar height */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-css img {
+  max-height: 220px; /* slightly less than navbar height */
+  width: auto;
+  object-fit: contain;
 }

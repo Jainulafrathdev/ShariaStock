@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './profile.css'; // Import the CSS file
 import { getUserData } from '../api/auth';
-import logo from "../images/ShariaStocks-logo/2.png";
+import logo from "../images/ShariaStock-logo.png";
 
 
 
@@ -17,18 +17,19 @@ const Profile = () => {
   const [suggestions, setSuggestions] = useState([]);
   const [user, setUser] = useState({});
   const navigate = useNavigate();
-  const email = localStorage.getItem('userEmail');
+
+  const email = localStorage.getItem('user');
 
   // Fetch user data on component mount
   useEffect(() => {
-    if (email) {
+    if (getEmail) {
       const fetchData = async () => {
-        const userData = await getUserData(email);
+        const userData = await getUserData(getEmail);
         setUser(userData);
       };
       fetchData();
     }
-  }, [email]);
+  }, [getEmail]);
 
   const companies = [
     { symbol: "RELIANCE.NSE", name: "Reliance Industries Ltd" },
@@ -117,16 +118,31 @@ const Profile = () => {
     setSuggestions([]); // Clear suggestions
     navigate(`/stock/${symbol}`, { state: { name } }); // Navigate to stock detail page
   };
-  const handleNewsletterSignup = () => {
 
-    // Add logic to handle newsletter signup (e.g., sending the email to your backend)
+  
+  const handleNewsletterSignup = async () => {
     if (email1) {
-      alert(`Thank you for subscribing with the email: ${email1}`);
-      setEmail(''); // Clear the input after submission
+      try {
+        const response = await fetch('http://localhost:5000/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email: email1 }),
+        });
+        
+        if (!response.ok) throw new Error('Error sending email');
+        
+        alert(`Thank you for subscribing with the email: ${email1}`);
+        setEmail(''); // Clear the input after submission
+      } catch (error) {
+        alert('An error occurred. Please try again later.');
+      }
     } else {
       alert('Please enter a valid email address.');
     }
   };
+  
 
   // Create navigate function
 
@@ -167,8 +183,8 @@ const Profile = () => {
         <div className="header-icons">
           {/* List icon to toggle sidebar */}
           <i className="fas fa-list" onClick={toggleSidebar}></i>
-          <div className="logo">
-            <img src={logo} alt="Logo" style={{ width: '100px', height: '100px' }} />
+          <div className="logo logo-css ">
+          <img src={logo} alt="Logo" />
           </div>
         </div>
 

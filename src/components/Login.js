@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../api/auth';
 import '../App.css';
+import logo from '../images/ShariaStock-logo.png'; // Import your logo
 
 const Login = () => {
     const [formData, setFormData] = useState({ email: '', password: '' });
@@ -26,12 +27,11 @@ const Login = () => {
             console.error(error.response.data);
         }
     };
-    
 
     return (
         <div>
-            <div className='header-section'>
-                <h1>ShariaStock</h1>
+            <div className='header'>
+                <img src={logo} alt="ShariaStock Logo" className='header-logo' />
             </div>
             <div className='form-container'>
                 <h1>Login</h1>

@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
-import Design from './components/design'
+import Design from './components/design';
 import Profile from './components/profile';
 import EditProfile from './components/editprofile';
 import AboutUs from './components/aboutus';
