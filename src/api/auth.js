@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'ec2-54-165-62-131.compute-1.amazonaws.com:5000/api/auth';
+const API_URL = 'http://98.84.144.227:5000/api/auth';
 
 export const signup = (userData) => axios.post(`${API_URL}/signup`, userData);
 export const login = (userData) => axios.post(`${API_URL}/login`, userData);
