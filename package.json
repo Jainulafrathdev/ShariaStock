@@ -44,5 +44,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "//http://107.22.95.62/:5000"
+ "proxy": "http://107.22.95.62:5000"
+
 }
