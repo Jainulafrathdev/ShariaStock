@@ -37,7 +37,7 @@ const EditProfile = () => {
                     pincode: userData.pincode || ''
                 });
                 setProfilePicture(userData.profilePicture || '');
-                setProfilePreview(`http://localhost:5000/${userData.profilePicture}`); // Set initial preview
+                setProfilePreview(`http://107.22.95.62:5000/${userData.profilePicture}`); // Set initial preview
             }
         };
         fetchUserData();
@@ -49,7 +49,7 @@ const EditProfile = () => {
 
     const handleCancelClick = () => {
         setIsEditing(false);
-        setProfilePreview(`http://localhost:5000/${user.profilePicture}`); // Reset to current profile picture on cancel
+        setProfilePreview(`http://107.22.95.62:5000/${user.profilePicture}`); // Reset to current profile picture on cancel
     };
 
     const handleChange = (e) => {
@@ -78,7 +78,7 @@ const EditProfile = () => {
         setIsEditing(false);
         const updatedUserData = await getUserData(email);
         setUser(updatedUserData);
-        setProfilePreview(`http://localhost:5000/${updatedUserData.profilePicture}`); // Update preview after save
+        setProfilePreview(`http://107.22.95.62:5000/${updatedUserData.profilePicture}`); // Update preview after save
     };
 
     const toggleDropdown = () => {
@@ -98,7 +98,7 @@ const EditProfile = () => {
                 </div>
 
                 <div className="user-icon" onClick={toggleDropdown}>
-                    <img src={`http://localhost:5000/${user.profilePicture}`} alt="Profile" className="profile-pic" />
+                    <img src={`http://107.22.95.62:5000/${user.profilePicture}`} alt="Profile" className="profile-pic" />
                     <div className="user-info">
                         <p>{user.name}</p>
                     </div>
@@ -108,7 +108,7 @@ const EditProfile = () => {
             {isDropdownOpen && (
                 <div className="profile-dropdown">
                     <div className="profile-section">
-                        <img src={`http://localhost:5000/${user.profilePicture}`} alt="Profile" className="dropdown-profile-pic" />
+                        <img src={`http://107.22.95.62:5000/${user.profilePicture}`} alt="Profile" className="dropdown-profile-pic" />
                         <div className="profile-info">
                             <p>{user.name}</p>
                             <p>{user.email}</p>

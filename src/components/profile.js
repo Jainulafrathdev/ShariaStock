@@ -123,7 +123,7 @@ const Profile = () => {
   const handleNewsletterSignup = async () => {
     if (email1) {
       try {
-        const response = await fetch('http://localhost:5000/send-email', {
+        const response = await fetch('http://107.22.95.62:5000/send-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -189,7 +189,7 @@ const Profile = () => {
         </div>
 
         <div className="user-icon" onClick={toggleDropdown}>
-          <img src={`http://localhost:5000/${user.profilePicture}`} alt="Profile" className="profile-pic" /> {/* Profile Picture */}
+          <img src={`http://107.22.95.62:5000/${user.profilePicture}`} alt="Profile" className="profile-pic" /> {/* Profile Picture */}
           <div className='user-info'>
             <p>{user.name}</p>
           </div>
@@ -203,7 +203,7 @@ const Profile = () => {
           <div className='profile-section'>
             <div className='profile-pic'>
               {user.profilePicture && (
-                <img src={`http://localhost:5000/${user.profilePicture}`} alt="Profile" className="dropdown-profile-pic" />
+                <img src={`http://107.22.95.62:5000/${user.profilePicture}`} alt="Profile" className="dropdown-profile-pic" />
               )}
               <div className='profile-info'>
                 <p>{user.name}</p>
