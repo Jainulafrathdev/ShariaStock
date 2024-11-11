@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://ec2-107-22-95-62.compute-1.amazonaws.com/profileDB', {
+        await mongoose.connect('mongodb://ec2-54-174-221-90.compute-1.amazonaws.com/profileDB', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
